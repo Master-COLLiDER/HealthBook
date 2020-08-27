@@ -33,7 +33,7 @@ public class about extends AppCompatActivity {
     }
 
     public void openvalue(){
-        Intent intent=new Intent(this, value2.class);
+        Intent intent=new Intent(this, value.class);
         startActivity(intent);
     }
 

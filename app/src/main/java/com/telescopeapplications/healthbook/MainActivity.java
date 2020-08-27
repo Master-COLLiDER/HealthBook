@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void movetosecond() {
-        Intent intent = new Intent(MainActivity.this, second.class);
+        Intent intent = new Intent(MainActivity.this, bmi.class);
         startActivity(intent);
     }
 }
