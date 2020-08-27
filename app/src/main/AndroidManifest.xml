@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.telescopeapplications.healthbook">
+
+    <dist:module dist:instant="true" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Diab-Fix"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ova"></activity>
+        <activity android:name=".nor" />
+        <activity android:name=".unda" />
+        <activity android:name=".value2" />
+        <activity android:name=".about" />
+        <activity android:name=".value" />
+        <activity android:name=".overweight" />
+        <activity android:name=".normal" />
+        <activity android:name=".underweight" />
+        <activity android:name=".bmi" />
+        <activity android:name=".habits" />
+        <activity android:name=".day" />
+        <activity android:name=".products" />
+        <activity android:name=".fruits" />
+        <activity android:name=".veggies3" />
+        <activity android:name=".veggies2" />
+        <activity android:name=".veggies1" />
+        <activity android:name=".pulses" />
+        <activity android:name=".cereal" />
+        <activity android:name=".second" />
+        <activity
+            android:name=".male"
+            android:label="@string/title_activity_male"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
