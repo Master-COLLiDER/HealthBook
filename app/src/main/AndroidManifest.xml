@@ -23,27 +23,12 @@
         <activity android:name=".ova"></activity>
         <activity android:name=".nor" />
         <activity android:name=".unda" />
-        <activity android:name=".value2" />
         <activity android:name=".about" />
         <activity android:name=".value" />
         <activity android:name=".overweight" />
         <activity android:name=".normal" />
         <activity android:name=".underweight" />
         <activity android:name=".bmi" />
-        <activity android:name=".habits" />
-        <activity android:name=".day" />
-        <activity android:name=".products" />
-        <activity android:name=".fruits" />
-        <activity android:name=".veggies3" />
-        <activity android:name=".veggies2" />
-        <activity android:name=".veggies1" />
-        <activity android:name=".pulses" />
-        <activity android:name=".cereal" />
-        <activity android:name=".second" />
-        <activity
-            android:name=".male"
-            android:label="@string/title_activity_male"
-            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
