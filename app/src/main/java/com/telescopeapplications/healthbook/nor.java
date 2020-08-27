@@ -9,6 +9,6 @@ public class nor extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.nor);
+        setContentView(R.layout.normal_veg);
     }
 }

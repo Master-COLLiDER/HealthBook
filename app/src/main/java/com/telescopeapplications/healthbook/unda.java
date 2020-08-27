@@ -9,6 +9,6 @@ public class unda extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.unda);
+        setContentView(R.layout.underweight_veg);
     }
 }

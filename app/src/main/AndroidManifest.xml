@@ -14,7 +14,6 @@
 
     <application
         android:allowBackup="true"
-        android:debuggable="false"
         android:icon="@mipmap/ic_launcher"
         android:label="Diab-Fix"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -28,7 +27,7 @@
         <activity android:name=".overweight" />
         <activity android:name=".normal" />
         <activity android:name=".underweight" />
-        <activity android:name=".bmi" />
+        <activity android:name=".bmi"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
