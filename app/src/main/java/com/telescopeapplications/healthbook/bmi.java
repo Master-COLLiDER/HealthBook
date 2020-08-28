@@ -1,10 +1,14 @@
 package com.telescopeapplications.healthbook;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
@@ -15,12 +19,13 @@ public class bmi extends AppCompatActivity {
     EditText height, weight;
     Button next,calc;
     TextView result;
-
+    private Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.bmi);
-
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         height= findViewById(R.id.height);
         weight= findViewById(R.id.weight);
 
@@ -91,5 +96,23 @@ public class bmi extends AppCompatActivity {
     public void hideSoftKeyboard(View view){
         InputMethodManager imm =(InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_short, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.actionshort_about:
+                startActivity(new Intent(getApplicationContext(),AboutActivity.class));
+                break;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }

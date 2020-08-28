@@ -1,20 +1,28 @@
 package com.telescopeapplications.healthbook;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
 public class SlideActivity extends AppCompatActivity {
     boolean doubleBackToExitPressedOnce = false;
+    private Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slide);
+
+        toolbar = findViewById(R.id.toolbar4);
+        setSupportActionBar(toolbar);
 
         getWindow().getDecorView().findViewById(R.id.toolbar5).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,5 +52,26 @@ public class SlideActivity extends AppCompatActivity {
                 doubleBackToExitPressedOnce=false;
             }
         }, 2000);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.action_bmi:
+                startActivity(new Intent(getApplicationContext(),bmi.class));
+                break;
+            case R.id.action_about:
+                startActivity(new Intent(getApplicationContext(),AboutActivity.class));
+                break;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }
