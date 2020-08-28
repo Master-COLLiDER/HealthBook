@@ -41,5 +41,13 @@
         android:background="@color/cardview_light_background"
         android:layout_centerHorizontal="true"/>
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
 
 </RelativeLayout>
