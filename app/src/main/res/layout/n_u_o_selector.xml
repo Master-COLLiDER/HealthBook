@@ -51,5 +51,13 @@
         app:title="Diab-Fix"
         android:theme="?attr/actionBarTheme" />
 
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/toolbar3"
+        android:background="@drawable/toolbar_dropshadow"
+        />
+
 
 </RelativeLayout>
