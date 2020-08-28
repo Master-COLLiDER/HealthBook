@@ -32,8 +32,10 @@
 
         </activity>
         <activity
+            android:noHistory="true"
             android:name=".SplashActivity">
             <intent-filter>
+
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
