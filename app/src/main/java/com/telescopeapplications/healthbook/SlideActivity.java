@@ -68,7 +68,7 @@ public class SlideActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(),bmi.class));
                 break;
             case R.id.action_about:
-                startActivity(new Intent(getApplicationContext(),bmi.class));
+                startActivity(new Intent(getApplicationContext(),AboutActivity.class));
                 break;
         }
 
