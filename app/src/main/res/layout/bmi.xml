@@ -1,76 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cardview_light_background"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
     tools:context=".bmi">
 
-    <androidx.appcompat.widget.AppCompatImageView
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="409dp"
+        android:layout_height="56dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/AppTheme"
+        app:title="Measurements"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textviewlayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerVertical="true"
-        android:src="@drawable/measurements" />
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:hint="Height ( in cm)"
+
+        app:startIconDrawable="@drawable/height"
+        app:startIconContentDescription="Height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number|numberDecimal" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:startIconDrawable="@drawable/weight"
+        app:startIconContentDescription="Weight"
+        app:layout_constraintTop_toBottomOf="@+id/textviewlayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Weight ( in KG )"
+
+            android:inputType="number|numberDecimal" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#065C0A"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout5" />
 
     <Button
         android:id="@+id/calc"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_marginVertical="460dp"
-        android:layout_marginLeft="20dp"
-        android:text="calculate" />
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/result"
-        android:text=""
-        android:gravity="center"
-        android:layout_marginTop="530dp"
-        android:layout_centerHorizontal="true"
-        android:textSize="30dp" />
+        android:layout_marginRight="32dp"
+        android:background="#BE14DC"
+        android:text="Calculate"
+        android:textColor="#F6F6F6"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result" />
 
     <Button
-    android:id="@+id/next"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentRight="true"
-    android:layout_marginVertical="460dp"
-        android:layout_marginRight="20dp"
-    android:text="@string/next" />
+        android:id="@+id/next"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
 
-    <EditText
-        android:id="@+id/height"
-        android:layout_width="97dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="190dp"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="50dp"
-        android:ems="10"
-        android:inputType="number|numberDecimal"
-        android:hint="cm" />
+        android:layout_marginRight="32dp"
+        android:background="#BE14DC"
+        android:text="Next"
+        android:textColor="#F6F6F6"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result" />
 
-    <EditText
-        android:id="@+id/weight"
-        android:layout_width="97dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="290dp"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="50dp"
-        android:ems="10"
-        android:inputType="number|numberDecimal"
-        android:hint="kg" />
-
-    <EditText
-        android:id="@+id/age"
-        android:layout_width="97dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="390dp"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="50dp"
-        android:ems="10"
-        android:inputType="number|numberDecimal"
-        android:hint="years" />
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,16 +2,17 @@ package com.telescopeapplications.healthbook;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
 public class bmi extends AppCompatActivity {
-    EditText height, weight, age;
+    EditText height, weight;
     Button next,calc;
     TextView result;
 
@@ -22,7 +23,7 @@ public class bmi extends AppCompatActivity {
 
         height= findViewById(R.id.height);
         weight= findViewById(R.id.weight);
-        age= findViewById(R.id.age);
+
         next= findViewById(R.id.next);
         calc= findViewById(R.id.calc);
         result= findViewById(R.id.result);
@@ -76,10 +77,19 @@ public class bmi extends AppCompatActivity {
 
             bmiLabel = bmi + "\n" + bmiLabel;
             result.setText(bmiLabel);
+
+            hideSoftKeyboard(getWindow().getDecorView().findViewById(android.R.id.content));
+            calc.setVisibility(View.GONE);
+            next.setVisibility(View.VISIBLE);
         }
 
     public void opennext(){
         Intent intent=new Intent(this, about.class);
         startActivity(intent);
+    }
+
+    public void hideSoftKeyboard(View view){
+        InputMethodManager imm =(InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }
 }

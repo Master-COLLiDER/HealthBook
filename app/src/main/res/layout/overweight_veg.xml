@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".unda">
+    tools:context=".overweightVeg">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -13,7 +13,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:scaleType="fitStart"
-            android:src="@drawable/nv3"
+            android:src="@drawable/nv1"
             android:adjustViewBounds="true"/>
     </LinearLayout>
+
 </ScrollView>

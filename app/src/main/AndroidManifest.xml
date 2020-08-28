@@ -14,21 +14,20 @@
 
     <application
         android:allowBackup="true"
-        android:debuggable="false"
         android:icon="@mipmap/ic_launcher"
         android:label="Diab-Fix"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ova"></activity>
-        <activity android:name=".nor" />
-        <activity android:name=".unda" />
+        <activity android:name=".overweightVeg"></activity>
+        <activity android:name=".normalVeg" />
+        <activity android:name=".underweightVeg" />
         <activity android:name=".about" />
-        <activity android:name=".value" />
+        <activity android:name=".VNUselector" />
         <activity android:name=".overweight" />
         <activity android:name=".normal" />
         <activity android:name=".underweight" />
-        <activity android:name=".bmi" />
+        <activity android:name=".bmi"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
