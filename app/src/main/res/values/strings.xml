@@ -19,4 +19,50 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+   
+
+
+    <string name="dietary_guidelines">
+        1. Avoid being overweight. Have balanced, healthy diet rather than “Special
+        diabetic foods”
+
+
+        \n\n2. Daily energy intake must be estimated after considering such factors as
+        age, sex, actual weight in relation to desirable weight, activity and
+        occupation.
+
+        \n\n3. Eat small meals (5-6 meals) every 2-3 hours rather than a large three
+        meals a day to keep the energy levels high
+
+        \n\n4. Include carbohydrates from foods high in fibre e.g. whole grains
+        (unpolished cereals and millets), whole pulses and legumes like grams,
+        soy, peas, beans, etc.
+
+        \n\n5. Proteins should provide 12-15 % of the total energy intake for people with
+        diabetes. Proteins from vegetable sources like pulses, soy, grams, peas,
+        low fat milk, low fat curds, fish and lean meats are recommended
+
+        \n\n6. It is advised to consume less than 10% of calories from saturated fat and
+        less than 300mg of cholesterol/day.
+
+        \n\n7. A mixture of oil is preferred than single oil. Poly unsaturated fatty acids
+        and monounsaturated fatty acids containing vegetable oils (sunflower oil,
+        groundnut oil, corn oil, gingelly oil) are preferred than hydrogenated fat
+        (ghee, butter, etc.)
+
+        \n\n8. Limit salt and salted foods. Sodium intake should not be no more than 6gm
+        daily. Diabetics are susceptible to high blood pressure. For persons with
+        hypertension and diabetes, the intake should be reduced to less than 3 g/
+        day.
+
+        \n\n9. Drink plenty of water and exercise regularly. Exercise increases sensitivity
+        to insulin and helps to improve blood-sugar control.
+
+        \n\n10. Avoid junk foods, aerated drinks and stick to natural drinks like fresh juice
+        and water.
+
+        \n\n11. Avoid ‘fasting’ and ‘feasting’.
+    </string>
+
+
 </resources>

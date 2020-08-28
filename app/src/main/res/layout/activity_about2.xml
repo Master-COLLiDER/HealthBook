@@ -6,14 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".about">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:textSize="25dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:layout_width="wrap_content"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar8"
+        android:layout_width="match_parent"
+        app:title="Diab-Fix"
         android:layout_height="wrap_content"
-        android:text="Diab-Fix" />
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
 
     <ImageView
         android:id="@+id/imageView3"
