@@ -12,6 +12,8 @@
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
+
+        app:title="Diab-Fix"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,10 +22,11 @@
 
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar4">
@@ -36,17 +39,16 @@
             <TextView
                 android:id="@+id/text_id"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:layout_marginLeft="32dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="32dp"
                 android:layout_marginRight="32dp"
-                android:layout_height="wrap_content"
                 android:text="DIABETES MELLITUS"
                 android:textColor="#001893"
                 android:textColorHighlight="@android:color/primary_text_dark"
-                android:textSize="35sp"
-                />
+                android:textSize="32sp" />
 
             <TextView
                 android:id="@+id/textView"
@@ -65,17 +67,16 @@
             <TextView
                 android:id="@+id/text_id2"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:layout_marginLeft="32dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="32dp"
                 android:layout_marginRight="32dp"
-                android:layout_height="wrap_content"
                 android:text="There are two major forms of diabetes:"
                 android:textColor="#000310"
                 android:textColorHighlight="@android:color/secondary_text_light"
-                android:textSize="21sp"
-                />
+                android:textSize="21sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -132,5 +133,33 @@
 
 
     </ScrollView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/design_default_color_secondary_variant"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Display1">
+
+
+        <TextView
+            android:id="@+id/toolbar1_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Go to Next Page"
+            android:textAlignment="center"
+            android:textColor="#CDDC39"
+            android:textSize="20sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
