@@ -7,6 +7,16 @@
     android:background="@color/cardview_light_background"
     tools:context=".MainActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:title="Diab-Fix"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
