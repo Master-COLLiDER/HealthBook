@@ -13,6 +13,124 @@
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_id"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_height="wrap_content"
+                android:text="DIABETES MELLITUS"
+                android:textColor="#001893"
+                android:textColorHighlight="@android:color/primary_text_dark"
+                android:textSize="35sp"
+                />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:justificationMode="inter_word"
+                android:text="\t\t\tDiabetes mellitus is a chronic metabolic disorder that prevents the body to utilize glucose completely or partially. It is characterized by absolute or relative deficiencies in insulin secretion and/or insulin action associated with chronic hyperglycemia and disturbances of carbohydrate, lipid, and protein metabolism. Most of the foods that are consumed, turns into glucose or sugar, for the bodies to use for energy. When the amount of glucose in the blood increases, e.g., after a meal, it triggers the release of the hormone insulin from the pancreas. In diabetic patient, the body either does not make enough insulin or cannot use its own insulin as well as it should. This causes sugars to build up in your blood. "
+                android:textSize="20sp"
+                tools:targetApi="o" />
+
+            <TextView
+                android:id="@+id/text_id2"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_height="wrap_content"
+                android:text="There are two major forms of diabetes:"
+                android:textColor="#000310"
+                android:textColorHighlight="@android:color/secondary_text_light"
+                android:textSize="21sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:justificationMode="inter_word"
+                android:text="1) Type 1 diabetes or Insulin dependent diabetes mellitus (IIDM):"
+                android:textColor="#001893"
+                android:textColorHighlight="@android:color/primary_text_dark"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:justificationMode="inter_word"
+                android:text="Type 1 diabetes which usually develops in childhood and adolescence but can also occur at any age. It can often occur when there is a family history of any form of diabetes. This type of diabetes is primarily due to autoimmune-mediated destruction of pancreatic beta cells, resulting in  insulin deficiency and thus requires a daily dose of insulin for good health and survival."
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:justificationMode="inter_word"
+                android:text="2) Type 2 diabetes or Non-insulin dependent diabetes mellitus (NIDDM):"
+                android:textColor="#001893"
+                android:textColorHighlight="@android:color/primary_text_dark"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:justificationMode="inter_word"
+                android:text="It usually affects overweight and obese adults and is characterized by high blood glucose, abnormal secretion of insulin or resistance to the hormone by the body’s tissue. Age, genetics, changing lifestyle and dietary factors promote the development of the disease and can be treated by diet, exercise or oral anti-diabetic drugs."
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
