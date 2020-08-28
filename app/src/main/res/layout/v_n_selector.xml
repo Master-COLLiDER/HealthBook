@@ -2,62 +2,56 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/cardview_light_background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NUOselector">
+    tools:context=".VNSelector">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="CHOOSE YOUR TYPE"
-        android:textSize="20dp"
-        android:layout_marginTop="100dp"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerVertical="true"
+        android:src="@drawable/q" />
 
     <ImageButton
-        android:id="@+id/normal"
+        android:id="@+id/bnvnselectorveg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/c"
-        android:layout_marginTop="200dp"
+        android:layout_below="@id/uu"
+        android:layout_centerInParent="true"
         android:background="@color/cardview_light_background"
-        android:layout_centerHorizontal="true"/>
-
+        app:srcCompat="@drawable/veg" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/butan"
+        android:layout_centerInParent="true"
+        android:id="@+id/uu"
+        />
     <ImageButton
-        android:id="@+id/overweight"
+        android:id="@+id/bnvnselectornonveg"
+        android:layout_above="@id/uu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/a"
-        android:layout_marginTop="350dp"
+        android:layout_centerInParent="true"
         android:background="@color/cardview_light_background"
-        android:layout_centerHorizontal="true"/>
-
-    <ImageButton
-        android:id="@+id/obese"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/kla"
-        android:layout_marginTop="500dp"
-        android:background="@color/cardview_light_background"
-        android:layout_centerHorizontal="true"/>
+        app:srcCompat="@drawable/nv" />
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar3"
+        android:id="@+id/toolbar2"
         android:layout_width="match_parent"
+
+        app:title="Diab-Fix"
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
-
-        app:title="Diab-Fix"
         android:theme="?attr/actionBarTheme" />
 
     <View
 
         android:layout_width="match_parent"
         android:layout_height="3dp"
-        android:layout_below="@+id/toolbar3"
+        android:layout_below="@+id/toolbar2"
         android:background="@drawable/toolbar_dropshadow"
         />
-
-
 </RelativeLayout>

@@ -5,55 +5,50 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
+import android.widget.ImageButton;
 
-public class SlideActivity extends AppCompatActivity {
-    boolean doubleBackToExitPressedOnce = false;
+public class VNSelector extends AppCompatActivity {
+    private ImageButton BnVeg;
+    private ImageButton BnNonVeg;
     private Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_slide);
+        setContentView(R.layout.v_n_selector);
 
-        toolbar = findViewById(R.id.toolbar4);
+         toolbar = findViewById(R.id.toolbar2);
         setSupportActionBar(toolbar);
-
-        getWindow().getDecorView().findViewById(R.id.toolbar5).setOnClickListener(new View.OnClickListener() {
+        BnVeg =findViewById(R.id.bnvnselectorveg);
+        BnNonVeg =findViewById(R.id.bnvnselectornonveg);
+        BnVeg.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(getApplicationContext(), SlideActivity2.class);
-                startActivity(intent);
+            public void onClick(View view) {
+                openvalue();
+            }
+        });
+        BnNonVeg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openvalue2();
             }
         });
     }
 
-
-    @Override
-    public void onBackPressed() {
-        if (doubleBackToExitPressedOnce) {
-            super.onBackPressed();
-            return;
-        }
-
-        this.doubleBackToExitPressedOnce = true;
-        Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show();
-
-        new Handler().postDelayed(new Runnable() {
-
-            @Override
-            public void run() {
-                doubleBackToExitPressedOnce=false;
-            }
-        }, 2000);
+    public void openvalue(){
+        Intent intent=new Intent(this, NUOselector.class);
+        intent.putExtra("type","Veg");
+        startActivity(intent);
     }
 
+    public void openvalue2(){
+        Intent intent=new Intent(this, NUOselector.class);
+        intent.putExtra("type","NonVeg");
+        startActivity(intent);
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();

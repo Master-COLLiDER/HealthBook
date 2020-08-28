@@ -2,46 +2,34 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/cardview_light_background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".about">
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerVertical="true"
-        android:src="@drawable/q" />
-
-    <ImageButton
-        android:id="@+id/tipaa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/uu"
-        android:layout_centerInParent="true"
-        android:background="@color/cardview_light_background"
-        app:srcCompat="@drawable/veg" />
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/butan"
-        android:layout_centerInParent="true"
-        android:id="@+id/uu"
-        />
-    <ImageButton
-        android:id="@+id/tipaa2"
-        android:layout_above="@id/uu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:background="@color/cardview_light_background"
-        app:srcCompat="@drawable/nv" />
+    tools:context=".AboutActivity">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar2"
+        android:id="@+id/toolbar8"
         android:layout_width="match_parent"
+        app:title="Diab-Fix"
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The app ‘Diab - Fix’ is a research and evidence based app designed and developed by a team of experts in the field of Food, Nutrition and Dietetics under All India Coordinated Research Project of Department of Food Science and Nutrition, Assam Agricultural University, Jorhat. The app is targeted to educate and empower pre-diabetic and diabetic for lifestyle management."
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:textSize="18dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
 </RelativeLayout>
