@@ -46,7 +46,7 @@ public class NUOselector extends AppCompatActivity {
                 if(T.equals("Veg"))
                 {
 
-                        openoverweight();
+                        openoverweightVeg();
                     // System.out.println("Collider: "+T);
 
                 }
@@ -61,7 +61,7 @@ public class NUOselector extends AppCompatActivity {
 
                  if(T.equals("Veg"))
                  {
-                        openobese();
+                        openobeseVeg();
                     // System.out.println("Collider: "+T);
 
                 }
