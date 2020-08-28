@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class unda extends AppCompatActivity {
+public class underweightVeg extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

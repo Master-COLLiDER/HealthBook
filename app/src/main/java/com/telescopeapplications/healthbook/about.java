@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 
 public class about extends AppCompatActivity {
@@ -33,12 +32,12 @@ public class about extends AppCompatActivity {
     }
 
     public void openvalue(){
-        Intent intent=new Intent(this, value.class);
+        Intent intent=new Intent(this, VNUselector.class);
         startActivity(intent);
     }
 
     public void openvalue2(){
-        Intent intent=new Intent(this, value.class);
+        Intent intent=new Intent(this, VNUselector.class);
         startActivity(intent);
     }
 }

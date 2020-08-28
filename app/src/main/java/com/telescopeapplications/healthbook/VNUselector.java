@@ -6,15 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.TextView;
 
-public class value extends AppCompatActivity {
+public class VNUselector extends AppCompatActivity {
     ImageButton underweight, normal, overweight;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.value);
+        setContentView(R.layout.v_n_u_selector);
 
         underweight = findViewById(R.id.under);
         normal= findViewById(R.id.normala);
