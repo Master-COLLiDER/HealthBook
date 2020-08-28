@@ -23,7 +23,7 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 try {
                     sleep(2500);
-                    Intent i = new Intent(SplashActivity.this,MainActivity.class);
+                    Intent i = new Intent(SplashActivity.this,SlideActivity.class);
                     startActivity(i);
 
 
