@@ -19,7 +19,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".overweightVeg"></activity>
+        <activity android:name=".SlideActivity"></activity>
+        <activity android:name=".overweightVeg" />
         <activity android:name=".normalVeg" />
         <activity android:name=".underweightVeg" />
         <activity android:name=".about" />
@@ -27,23 +28,17 @@
         <activity android:name=".overweight" />
         <activity android:name=".normal" />
         <activity android:name=".underweight" />
-        <activity android:name=".bmi"/>
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".bmi" />
+        <activity android:name=".MainActivity"></activity>
         <activity
-            android:noHistory="true"
-            android:name=".SplashActivity">
+            android:name=".SplashActivity"
+            android:noHistory="true">
             <intent-filter>
-
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-
-
     </application>
 
 </manifest>
