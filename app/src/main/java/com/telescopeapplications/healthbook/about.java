@@ -32,12 +32,12 @@ public class about extends AppCompatActivity {
     }
 
     public void openvalue(){
-        Intent intent=new Intent(this, VNUselector.class);
+        Intent intent=new Intent(this, NUOselector.class);
         startActivity(intent);
     }
 
     public void openvalue2(){
-        Intent intent=new Intent(this, VNUselector.class);
+        Intent intent=new Intent(this, NUOselector.class);
         startActivity(intent);
     }
 }

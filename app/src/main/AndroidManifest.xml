@@ -23,7 +23,7 @@
         <activity android:name=".normalVeg" />
         <activity android:name=".underweightVeg" />
         <activity android:name=".about" />
-        <activity android:name=".VNUselector" />
+        <activity android:name=".NUOselector" />
         <activity android:name=".overweight" />
         <activity android:name=".normal" />
         <activity android:name=".underweight" />
