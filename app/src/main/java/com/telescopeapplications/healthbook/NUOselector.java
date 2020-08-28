@@ -16,7 +16,7 @@ public class NUOselector extends AppCompatActivity {
         setContentView(R.layout.n_u_o_selector);
 
         T = getIntent().getStringExtra("type");
-        System.out.println("Collider : "+T);
+
 
         normal = findViewById(R.id.normal);
         overweight = findViewById(R.id.overweight);
@@ -46,7 +46,7 @@ public class NUOselector extends AppCompatActivity {
                 if(T.equals("Veg"))
                 {
 
-                        openoverweightVeg();
+                        openoverweight();
                     // System.out.println("Collider: "+T);
 
                 }
@@ -61,7 +61,7 @@ public class NUOselector extends AppCompatActivity {
 
                  if(T.equals("Veg"))
                  {
-                        openobeseVeg();
+                        openobese();
                     // System.out.println("Collider: "+T);
 
                 }
