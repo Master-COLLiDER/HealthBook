@@ -14,6 +14,12 @@
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/toolbar8"
+        android:background="@drawable/toolbar_dropshadow"
+        />
 
     <ImageView
         android:id="@+id/imageView3"
