@@ -47,8 +47,6 @@
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
-
-        app:title="Diab-Fix"
         android:theme="?attr/actionBarTheme" />
 
 
