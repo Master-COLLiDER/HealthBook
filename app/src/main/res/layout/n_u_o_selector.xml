@@ -49,7 +49,20 @@
         android:minHeight="?attr/actionBarSize"
 
         app:title="Diab-Fix"
-        android:theme="?attr/actionBarTheme" />
+        android:theme="?attr/actionBarTheme"   >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Diab-Fix"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="18dp" />
+    </androidx.appcompat.widget.Toolbar>
 
 
 </RelativeLayout>
