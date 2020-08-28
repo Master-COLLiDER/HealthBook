@@ -84,7 +84,7 @@ public class bmi extends AppCompatActivity {
         }
 
     public void opennext(){
-        Intent intent=new Intent(this, about.class);
+        Intent intent=new Intent(this, VNSelector.class);
         startActivity(intent);
     }
 

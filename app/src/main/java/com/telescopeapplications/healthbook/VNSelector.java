@@ -7,23 +7,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class about extends AppCompatActivity {
-    private ImageButton btn;
-    private ImageButton btn2;
+public class VNSelector extends AppCompatActivity {
+    private ImageButton BnVeg;
+    private ImageButton BnNonVeg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about);
-        btn=findViewById(R.id.tipaa);
-        btn2=findViewById(R.id.tipaa2);
-        btn.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.v_n_selector);
+        BnVeg =findViewById(R.id.bnvnselectorveg);
+        BnNonVeg =findViewById(R.id.bnvnselectornonveg);
+        BnVeg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openvalue();
             }
         });
-        btn2.setOnClickListener(new View.OnClickListener() {
+        BnNonVeg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openvalue2();
@@ -33,11 +33,13 @@ public class about extends AppCompatActivity {
 
     public void openvalue(){
         Intent intent=new Intent(this, NUOselector.class);
+        intent.putExtra("type","Veg");
         startActivity(intent);
     }
 
     public void openvalue2(){
         Intent intent=new Intent(this, NUOselector.class);
+        intent.putExtra("type","NonVeg");
         startActivity(intent);
     }
 }
