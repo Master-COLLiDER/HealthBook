@@ -101,17 +101,14 @@ public class bmi extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu, menu);
+        inflater.inflate(R.menu.menu_short, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
-            case R.id.action_bmi:
-                startActivity(new Intent(getApplicationContext(),bmi.class));
-                break;
-            case R.id.action_about:
+            case R.id.actionshort_about:
                 startActivity(new Intent(getApplicationContext(),AboutActivity.class));
                 break;
         }
