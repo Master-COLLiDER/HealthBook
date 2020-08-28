@@ -8,27 +8,33 @@ import android.view.View;
 import android.widget.ImageButton;
 
 public class NUOselector extends AppCompatActivity {
-    ImageButton underweight, normal, overweight;
-
+    ImageButton normal, overweight, obese;
+    String T;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.n_u_o_selector);
 
-        underweight = findViewById(R.id.under);
-        normal= findViewById(R.id.normala);
-        overweight= findViewById(R.id.over);
+        T = getIntent().getStringExtra("type");
 
-        underweight.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openunder();
-            }
-        });
+
+        normal = findViewById(R.id.normal);
+        overweight = findViewById(R.id.overweight);
+        obese = findViewById(R.id.obese);
 
         normal.setOnClickListener(new View.OnClickListener() {
             @Override
+
             public void onClick(View v) {
+
+                if(T.equals("Veg"))
+                {
+
+                        opennormalVeg();
+                   // System.out.println("Collider: "+T);
+
+                }
+                else
                 opennormal();
             }
         });
@@ -36,23 +42,64 @@ public class NUOselector extends AppCompatActivity {
         overweight.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openover();
+
+                if(T.equals("Veg"))
+                {
+
+                        openoverweight();
+                    // System.out.println("Collider: "+T);
+
+                }
+                else
+                    openoverweight();
+            }
+        });
+
+        obese.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                 if(T.equals("Veg"))
+                 {
+                        openobese();
+                    // System.out.println("Collider: "+T);
+
+                }
+                else
+                openobese();
             }
         });
     }
 
-    public void openunder(){
+    public void opennormal(){
         Intent intent=new Intent(this, underweight.class);
         startActivity(intent);
     }
 
-    public void opennormal(){
+    public void openoverweight(){
         Intent intent=new Intent(this, normal.class);
         startActivity(intent);
     }
 
-    public void openover(){
+    public void openobese(){
         Intent intent=new Intent(this, overweight.class);
         startActivity(intent);
     }
+
+    public void opennormalVeg(){
+        Intent intent=new Intent(this, underweightVeg.class);
+        startActivity(intent);
+    }
+
+    public void openoverweightVeg(){
+        Intent intent=new Intent(this, normalVeg.class);
+        startActivity(intent);
+    }
+
+    public void openobeseVeg(){
+        Intent intent=new Intent(this, overweightVeg.class);
+        startActivity(intent);
+    }
+
+
 }

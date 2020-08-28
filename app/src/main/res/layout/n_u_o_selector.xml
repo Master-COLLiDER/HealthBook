@@ -15,7 +15,7 @@
         android:layout_centerHorizontal="true"/>
 
     <ImageButton
-        android:id="@+id/under"
+        android:id="@+id/normal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/c"
@@ -24,7 +24,7 @@
         android:layout_centerHorizontal="true"/>
 
     <ImageButton
-        android:id="@+id/normala"
+        android:id="@+id/overweight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/a"
@@ -33,7 +33,7 @@
         android:layout_centerHorizontal="true"/>
 
     <ImageButton
-        android:id="@+id/over"
+        android:id="@+id/obese"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/kla"

@@ -5,7 +5,7 @@
     android:background="@color/cardview_light_background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".about">
+    tools:context=".VNSelector">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="match_parent"
@@ -14,7 +14,7 @@
         android:src="@drawable/q" />
 
     <ImageButton
-        android:id="@+id/tipaa"
+        android:id="@+id/bnvnselectorveg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/uu"
@@ -29,7 +29,7 @@
         android:id="@+id/uu"
         />
     <ImageButton
-        android:id="@+id/tipaa2"
+        android:id="@+id/bnvnselectornonveg"
         android:layout_above="@id/uu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
