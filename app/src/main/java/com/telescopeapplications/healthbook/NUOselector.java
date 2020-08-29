@@ -123,6 +123,9 @@ public class NUOselector extends AppCompatActivity {
             case R.id.action_about:
                 startActivity(new Intent(getApplicationContext(),AboutActivity.class));
                 break;
+            case R.id.action_aboutd:
+                startActivity(new Intent(getApplicationContext(),Copiright.class));
+                break;
         }
 
         return super.onOptionsItemSelected(item);

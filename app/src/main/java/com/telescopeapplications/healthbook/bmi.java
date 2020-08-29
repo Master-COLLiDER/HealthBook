@@ -111,6 +111,9 @@ public class bmi extends AppCompatActivity {
             case R.id.actionshort_about:
                 startActivity(new Intent(getApplicationContext(),AboutActivity.class));
                 break;
+            case R.id.actionshort_aboutd:
+                startActivity(new Intent(getApplicationContext(),Copiright.class));
+                break;
         }
 
         return super.onOptionsItemSelected(item);
