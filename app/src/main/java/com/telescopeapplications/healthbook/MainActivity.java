@@ -5,15 +5,12 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private ImageButton BtnMove;
@@ -65,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(),AboutActivity.class));
                 break;
             case R.id.action_aboutd:
-                startActivity(new Intent(getApplicationContext(),Copiright.class));
+                startActivity(new Intent(getApplicationContext(), Copyright.class));
                 break;
         }
 

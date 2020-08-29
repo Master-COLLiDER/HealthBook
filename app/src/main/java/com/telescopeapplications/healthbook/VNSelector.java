@@ -66,7 +66,7 @@ public class VNSelector extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(),AboutActivity.class));
                 break;
             case R.id.action_aboutd:
-                startActivity(new Intent(getApplicationContext(),Copiright.class));
+                startActivity(new Intent(getApplicationContext(), Copyright.class));
                 break;
         }
 

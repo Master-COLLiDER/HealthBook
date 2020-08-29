@@ -112,7 +112,7 @@ public class bmi extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(),AboutActivity.class));
                 break;
             case R.id.actionshort_aboutd:
-                startActivity(new Intent(getApplicationContext(),Copiright.class));
+                startActivity(new Intent(getApplicationContext(), Copyright.class));
                 break;
         }
 
