@@ -31,13 +31,39 @@
         app:srcCompat="@mipmap/ic_launcher" />
 
     <TextView
+        android:textAlignment="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Copyright JKL Texhnology"
+        android:text="Version 1.2\n\nDevelopers :-"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="250dp"
         android:textSize="18dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"/>
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:autoLink="web"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/probal_git"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="320dp"
+        android:textSize="18dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:autoLink="web"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pranab_git"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="380dp"
+        android:textSize="18dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center_horizontal" />
 
 </RelativeLayout>
