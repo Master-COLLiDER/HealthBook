@@ -25,12 +25,12 @@
         <activity android:name=".AboutActivity" />
         <activity android:name=".SlideActivity2" />
         <activity android:name=".SlideActivity" />
-        <activity android:name=".overweightVeg" />
+        <activity android:name=".obeseVeg" />
         <activity android:name=".normalVeg" />
         <activity android:name=".underweightVeg" />
         <activity android:name=".VNSelector" />
         <activity android:name=".NUOselector" />
-        <activity android:name=".overweight" />
+        <activity android:name=".obese" />
         <activity android:name=".normal" />
         <activity android:name=".underweight" />
         <activity android:name=".bmi" />

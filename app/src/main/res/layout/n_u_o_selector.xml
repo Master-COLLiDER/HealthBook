@@ -14,20 +14,24 @@
         android:layout_marginTop="100dp"
         android:layout_centerHorizontal="true"/>
 
-    <ImageButton
+    <Button
         android:id="@+id/normal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/c"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="200dp"
-        android:background="@color/cardview_light_background"
-        android:layout_centerHorizontal="true"/>
+        android:background="@drawable/button"
+        android:text="UnderWeight"
+        android:textColor="#43454A"
+        >
+
+    </Button>
 
     <ImageButton
         android:id="@+id/overweight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/a"
+        app:srcCompat="@drawable/c"
         android:layout_marginTop="350dp"
         android:background="@color/cardview_light_background"
         android:layout_centerHorizontal="true"/>

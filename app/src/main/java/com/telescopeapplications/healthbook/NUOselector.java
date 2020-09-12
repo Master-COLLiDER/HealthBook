@@ -9,10 +9,12 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 public class NUOselector extends AppCompatActivity {
-    ImageButton normal, overweight, obese;
+    ImageButton overweight, obese;
+    Button normal;
     String T;
     private Toolbar toolbar;
     @Override
@@ -88,7 +90,7 @@ public class NUOselector extends AppCompatActivity {
     }
 
     public void openobese(){
-        Intent intent=new Intent(this, overweight.class);
+        Intent intent=new Intent(this, com.telescopeapplications.healthbook.obese.class);
         startActivity(intent);
     }
 
@@ -103,7 +105,7 @@ public class NUOselector extends AppCompatActivity {
     }
 
     public void openobeseVeg(){
-        Intent intent=new Intent(this, overweightVeg.class);
+        Intent intent=new Intent(this, obeseVeg.class);
         startActivity(intent);
     }
 
