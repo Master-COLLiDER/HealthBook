@@ -23,7 +23,7 @@ public class SlideActivity2 extends AppCompatActivity {
         getWindow().getDecorView().findViewById(R.id.toolbar7).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), bmi.class);
                 startActivity(intent);
             }
         });
