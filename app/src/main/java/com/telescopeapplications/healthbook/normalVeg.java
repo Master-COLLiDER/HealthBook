@@ -18,10 +18,10 @@ public class normalVeg extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.normal_veg);
-  toolbar = findViewById(R.id.toolbar15);
+        toolbar = findViewById(R.id.toolbar15);
         setSupportActionBar(toolbar);
-         pdfView = findViewById(R.id.normalVeg_pdf_view);
-         pdfView.fromAsset("normalVeg.pdf").scale(100).show();
+        pdfView = findViewById(R.id.normalVeg_pdf_view);
+        pdfView.fromAsset("normalVeg.pdf").scale(100).show();
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
