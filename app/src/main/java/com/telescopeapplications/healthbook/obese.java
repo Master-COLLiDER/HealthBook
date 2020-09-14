@@ -10,11 +10,11 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.github.barteksc.pdfviewer.PDFView;
+import com.pdfview.PDFView;
 
 public class obese extends AppCompatActivity {
     private Toolbar toolbar;
-    PDFView pdfViewObese;
+     PDFView pdfView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,12 +22,8 @@ public class obese extends AppCompatActivity {
 
         toolbar = findViewById(R.id.toolbar10);
         setSupportActionBar(toolbar);
-
-
-
-        pdfViewObese = findViewById(R.id.pdfViewObese);
-
-        pdfViewObese.fromAsset("obese.pdf").load();
+        pdfView = findViewById(R.id.obese_pdf_view);
+        pdfView.fromAsset("obese.pdf").show();
     }
 
     @Override

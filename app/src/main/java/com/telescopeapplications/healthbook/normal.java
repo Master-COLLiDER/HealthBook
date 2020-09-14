@@ -9,19 +9,20 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import com.github.barteksc.pdfviewer.PDFView;
+import com.pdfview.PDFView;
 
 public class normal extends AppCompatActivity {
      private Toolbar toolbar;
-    PDFView pdfViewNormal;
+     PDFView pdfView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.normal);
-  toolbar = findViewById(R.id.toolbar14);
+        toolbar = findViewById(R.id.toolbar14);
         setSupportActionBar(toolbar);
-        pdfViewNormal = findViewById(R.id.pdfViewNormal);
-        pdfViewNormal.fromAsset("normal.pdf").load();
+
+        pdfView = findViewById(R.id.normal_pdf_view);
+        pdfView.fromAsset("normal.pdf").show();
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

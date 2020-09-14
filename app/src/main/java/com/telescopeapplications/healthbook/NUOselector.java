@@ -10,11 +10,9 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 
 public class NUOselector extends AppCompatActivity {
-    ImageButton overweight, obese;
-    Button normal;
+    Button underWeightBtn, normalBtn, obeseBtn;
     String T;
     private Toolbar toolbar;
     @Override
@@ -26,11 +24,11 @@ public class NUOselector extends AppCompatActivity {
         T = getIntent().getStringExtra("type");
 
 
-        normal = findViewById(R.id.normal);
-        overweight = findViewById(R.id.overweight);
-        obese = findViewById(R.id.obese);
+        underWeightBtn = findViewById(R.id.underWeightBtn);
+        normalBtn = findViewById(R.id.normalBtn);
+        obeseBtn = findViewById(R.id.obeseBtn);
 
-        normal.setOnClickListener(new View.OnClickListener() {
+        underWeightBtn.setOnClickListener(new View.OnClickListener() {
             @Override
 
             public void onClick(View v) {
@@ -38,73 +36,73 @@ public class NUOselector extends AppCompatActivity {
                 if(T.equals("Veg"))
                 {
 
-                        opennormalVeg();
+                        openUnderWeightVeg();
                    // System.out.println("Collider: "+T);
 
                 }
                 else
-                opennormal();
+                openUnderWeight();
             }
         });
 
-        overweight.setOnClickListener(new View.OnClickListener() {
+        normalBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 if(T.equals("Veg"))
                 {
 
-                        openoverweightVeg();
+                        openNormalVeg();
                     // System.out.println("Collider: "+T);
 
                 }
                 else
-                    openoverweight();
+                    openNormal();
             }
         });
 
-        obese.setOnClickListener(new View.OnClickListener() {
+        obeseBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                  if(T.equals("Veg"))
                  {
-                        openobeseVeg();
+                        openObeseVeg();
                     // System.out.println("Collider: "+T);
 
                 }
                 else
-                openobese();
+                openObese();
             }
         });
     }
 
-    public void opennormal(){
+    public void openUnderWeight(){
         Intent intent=new Intent(this, underweight.class);
         startActivity(intent);
     }
 
-    public void openoverweight(){
+    public void openNormal(){
         Intent intent=new Intent(this, normal.class);
         startActivity(intent);
     }
 
-    public void openobese(){
+    public void openObese(){
         Intent intent=new Intent(this, com.telescopeapplications.healthbook.obese.class);
         startActivity(intent);
     }
 
-    public void opennormalVeg(){
+    public void openUnderWeightVeg(){
         Intent intent=new Intent(this, underweightVeg.class);
         startActivity(intent);
     }
 
-    public void openoverweightVeg(){
+    public void openNormalVeg(){
         Intent intent=new Intent(this, normalVeg.class);
         startActivity(intent);
     }
 
-    public void openobeseVeg(){
+    public void openObeseVeg(){
         Intent intent=new Intent(this, obeseVeg.class);
         startActivity(intent);
     }

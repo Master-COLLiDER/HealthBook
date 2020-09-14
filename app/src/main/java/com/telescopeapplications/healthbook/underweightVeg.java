@@ -9,19 +9,19 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import com.github.barteksc.pdfviewer.PDFView;
+import com.pdfview.PDFView;
 
 public class underweightVeg extends AppCompatActivity {
       private Toolbar toolbar;
-    PDFView pdfViewUnderVeg;
+    PDFView pdfView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.underweight_veg);
   toolbar = findViewById(R.id.toolbar13);
         setSupportActionBar(toolbar);
-        pdfViewUnderVeg = findViewById(R.id.pdfViewUnderVeg);
-        pdfViewUnderVeg.fromAsset("underVeg.pdf").load();
+       pdfView = findViewById(R.id.underVeg_pdf_view);
+        pdfView.fromAsset("underVeg.pdf").show();
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

@@ -9,11 +9,11 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import com.github.barteksc.pdfviewer.PDFView;
+import com.pdfview.PDFView;
 
 public class obeseVeg extends AppCompatActivity {
       private Toolbar toolbar;
-    PDFView pdfViewObeseVeg;
+     PDFView pdfView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,8 +21,8 @@ public class obeseVeg extends AppCompatActivity {
   toolbar = findViewById(R.id.toolbar11);
         setSupportActionBar(toolbar);
 
-        pdfViewObeseVeg = findViewById(R.id.pdfViewObeseVeg);
-        pdfViewObeseVeg.fromAsset("obeseVeg.pdf").load();
+         pdfView = findViewById(R.id.obeseVeg_pdf_view);
+        pdfView.fromAsset("obeseVeg.pdf").show();
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

@@ -15,7 +15,7 @@
         android:layout_centerHorizontal="true"/>
 
     <Button
-        android:id="@+id/normal"
+        android:id="@+id/underWeightBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -23,27 +23,30 @@
         android:background="@drawable/button"
         android:text="UnderWeight"
         android:textColor="#43454A"
-        >
+        />
 
-    </Button>
 
-    <ImageButton
-        android:id="@+id/overweight"
+    <Button
+        android:id="@+id/normalBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/c"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="350dp"
-        android:background="@color/cardview_light_background"
-        android:layout_centerHorizontal="true"/>
+        android:background="@drawable/button"
+        android:text="Normal"
+        android:textColor="#43454A"
+        />
 
-    <ImageButton
-        android:id="@+id/obese"
+    <Button
+        android:id="@+id/obeseBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/kla"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="500dp"
-        android:background="@color/cardview_light_background"
-        android:layout_centerHorizontal="true"/>
+        android:background="@drawable/button"
+        android:text="Obese"
+        android:textColor="#43454A"
+        />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar3"
