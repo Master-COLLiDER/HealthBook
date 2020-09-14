@@ -22,7 +22,7 @@ public class normal extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         pdfView = findViewById(R.id.normal_pdf_view);
-        pdfView.fromAsset("test.pdf").scale(100).show();
+        pdfView.fromAsset("normal.pdf").scale(100).show();
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

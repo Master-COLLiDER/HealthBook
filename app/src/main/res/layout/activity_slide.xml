@@ -47,27 +47,21 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginLeft="32dp"
-                android:layout_marginTop="32dp"
-                android:layout_marginEnd="32dp"
-                android:layout_marginRight="32dp"
-                android:text="DIABETES MELLITUS"
+                android:layout_marginStart="24dp"
+                style="@style/NewTaskHeaderText"
+                android:text="@string/diabetes_mellitus"
                 android:textColor="#001893"
                 android:textColorHighlight="@android:color/primary_text_dark"
-                android:textSize="32sp" />
+                android:textSize="24sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
-                android:layout_marginLeft="32dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="12dp"
                 android:layout_marginEnd="32dp"
-                android:layout_marginRight="32dp"
-                android:justificationMode="inter_word"
-                android:text="\t\t\tDiabetes mellitus is a chronic metabolic disorder that prevents the body to utilize glucose completely or partially. It is characterized by absolute or relative deficiencies in insulin secretion and/or insulin action associated with chronic hyperglycemia and disturbances of carbohydrate, lipid, and protein metabolism. Most of the foods that are consumed, turns into glucose or sugar, for the bodies to use for energy. When the amount of glucose in the blood increases, e.g., after a meal, it triggers the release of the hormone insulin from the pancreas. In diabetic patient, the body either does not make enough insulin or cannot use its own insulin as well as it should. This causes sugars to build up in your blood. "
-                android:textSize="20sp"
+                android:text="@string/slideactivity_paragraph_1"
+                android:textSize="18sp"
                 tools:targetApi="o" />
 
             <TextView
