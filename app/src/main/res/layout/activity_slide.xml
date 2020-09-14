@@ -34,6 +34,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/toolbar5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,10 +46,10 @@
             android:orientation="vertical">
 
             <TextView
+                style="@style/NewTaskHeaderText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
-                style="@style/NewTaskHeaderText"
                 android:text="@string/diabetes_mellitus"
                 android:textColor="#001893"
                 android:textColorHighlight="@android:color/primary_text_dark"
@@ -60,6 +61,7 @@
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="12dp"
                 android:layout_marginEnd="32dp"
+                android:justificationMode="inter_word"
                 android:text="@string/slideactivity_paragraph_1"
                 android:textSize="18sp"
                 tools:targetApi="o" />
@@ -72,62 +74,62 @@
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="32dp"
                 android:layout_marginRight="32dp"
-                android:text="There are two major forms of diabetes:"
+                android:text="@string/there_are_two_major_forms_of_diabetes"
                 android:textColor="#000310"
                 android:textColorHighlight="@android:color/secondary_text_light"
-                android:textSize="21sp" />
+                android:textSize="19sp" />
 
             <TextView
                 android:layout_width="wrap_content"
 
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
-                android:layout_marginLeft="32dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="18dp"
                 android:layout_marginEnd="32dp"
-                android:layout_marginRight="32dp"
-                android:justificationMode="inter_word"
-                android:text="1) Type 1 diabetes or Insulin dependent diabetes mellitus (IIDM):"
+                android:text="@string/type_1_diabetes"
                 android:textColor="#001893"
                 android:textColorHighlight="@android:color/primary_text_dark"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
-                android:layout_marginLeft="32dp"
+                android:layout_marginTop="12dp"
+
                 android:layout_marginEnd="32dp"
-                android:layout_marginRight="32dp"
                 android:justificationMode="inter_word"
-                android:text="Type 1 diabetes which usually develops in childhood and adolescence but can also occur at any age. It can often occur when there is a family history of any form of diabetes. This type of diabetes is primarily due to autoimmune-mediated destruction of pancreatic beta cells, resulting in  insulin deficiency and thus requires a daily dose of insulin for good health and survival."
-                android:textSize="20sp" />
+                android:text="@string/type_2_diabetes_para"
+                android:textSize="18sp"
+                tools:targetApi="o" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/textView"
 
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
-                android:layout_marginLeft="32dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="18dp"
                 android:layout_marginEnd="32dp"
-                android:layout_marginRight="32dp"
-                android:justificationMode="inter_word"
-                android:text="2) Type 2 diabetes or Non-insulin dependent diabetes mellitus (NIDDM):"
+                android:text="@string/type_2_diabetes"
                 android:textColor="#001893"
                 android:textColorHighlight="@android:color/primary_text_dark"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
-                android:layout_marginLeft="32dp"
+
+                android:layout_marginTop="12dp"
                 android:layout_marginEnd="32dp"
-                android:layout_marginRight="32dp"
                 android:justificationMode="inter_word"
-                android:text="It usually affects overweight and obese adults and is characterized by high blood glucose, abnormal secretion of insulin or resistance to the hormone by the body’s tissue. Age, genetics, changing lifestyle and dietary factors promote the development of the disease and can be treated by diet, exercise or oral anti-diabetic drugs."
-                android:textSize="20sp" />
+                android:text="@string/type_1_diabetes_para"
+                android:textSize="18sp"
+                tools:targetApi="o" />
+
         </LinearLayout>
 
 

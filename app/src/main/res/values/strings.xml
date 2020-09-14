@@ -48,6 +48,12 @@
     <string name="pranab_git"><a href="https://Github.com/prnbbora4">Pranab Bora:\n Github.com/prnbbora4</a></string>
     <string name="diabetes_mellitus">DIABETES MELLITUS</string>
     <string name="slideactivity_paragraph_1">\t\t\tDiabetes mellitus is a chronic metabolic disorder that prevents the body to utilize glucose completely or partially. It is characterized by absolute or relative deficiencies in insulin secretion and/or insulin action associated with chronic hyperglycemia and disturbances of carbohydrate, lipid, and protein metabolism. Most of the foods that are consumed, turns into glucose or sugar, for the bodies to use for energy. When the amount of glucose in the blood increases, e.g., after a meal, it triggers the release of the hormone insulin from the pancreas. In diabetic patient, the body either does not make enough insulin or cannot use its own insulin as well as it should. This causes sugars to build up in your blood.</string>
+    <string name="there_are_two_major_forms_of_diabetes">There are two major forms of diabetes:</string>
+    <string name="type_1_diabetes">1) Type 1 diabetes or Insulin dependent diabetes mellitus (IIDM):</string>
+    <string name="type_1_diabetes_para">Type 1 diabetes which usually develops in childhood and adolescence but can also occur at any age. It can often occur when there is a family history of any form of diabetes. This type of diabetes is primarily due to autoimmune-mediated destruction of pancreatic beta cells, resulting in insulin deficiency and thus requires a daily dose of insulin for good health and survival.</string>
+    <string name="type_2_diabetes">2) Type 2 diabetes or Non-insulin dependent diabetes mellitus (NIDDM):</string>
+    <string name="type_2_diabetes_para">It usually affects overweight and obese adults and is characterized by high blood glucose, abnormal secretion of insulin or resistance to the hormone by the body’s tissue. Age, genetics, changing lifestyle and dietary factors promote the development of the disease and can be treated by diet, exercise or oral anti-diabetic drugs.</string>
+    <string name="dietary_guidelines_for_diabetes">DIETARY GUIDELINES FOR DIABETES</string>
 
 
 </resources>
