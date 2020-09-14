@@ -41,13 +41,13 @@ public class bmi extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-
+                showCalculate();
             }
 
             @Override
             public void afterTextChanged(Editable s)
             {
-                showCalculate();
+
             }
         });
         weight.addTextChangedListener(new TextWatcher() {
