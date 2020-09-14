@@ -54,6 +54,11 @@
     <string name="type_2_diabetes">2) Type 2 diabetes or Non-insulin dependent diabetes mellitus (NIDDM):</string>
     <string name="type_2_diabetes_para">It usually affects overweight and obese adults and is characterized by high blood glucose, abnormal secretion of insulin or resistance to the hormone by the body’s tissue. Age, genetics, changing lifestyle and dietary factors promote the development of the disease and can be treated by diet, exercise or oral anti-diabetic drugs.</string>
     <string name="dietary_guidelines_for_diabetes">DIETARY GUIDELINES FOR DIABETES</string>
+    <string name="logo">LOGO</string>
+    <string name="powered_by">Powered by</string>
+    <string name="AICRP">AICRP on Home Science College of Community Science AAU, Jorhat</string>
+    <string name="and">And</string>
+    <string name="ICAR">ICAR-Central Institute For Women In Agriculture, Bhubaneswar</string>
 
 
 </resources>
