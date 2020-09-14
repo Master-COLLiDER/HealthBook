@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="3dp"
         android:layout_below="@+id/toolbar1"
-        android:background="@drawable/toolbar_dropshadow"
+        android:background="@drawable/toolbardropshadow"
         />
 
     <ImageView
