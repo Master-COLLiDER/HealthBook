@@ -8,16 +8,17 @@
 
 
     <ImageView
-        android:layout_width="210dp"
-        android:layout_height="210dp"
-        android:src="@drawable/logo"
+        android:layout_width="166dp"
+        android:layout_height="138dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp" />
+        android:layout_marginTop="150dp"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/logo" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Powered by"
+        android:text="@string/powered_by"
         android:textSize="15sp"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
@@ -25,8 +26,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="AICRP on Home Science College of Community Science AAU, Jorhat "
-        android:textSize="15sp"
+        android:text="@string/AICRP"
+        android:textSize="18sp"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         android:textAlignment="center"
@@ -35,7 +36,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="And"
+        android:text="@string/and"
         android:textSize="15sp"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
@@ -43,8 +44,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ICAR-CENTRAL INSTITUTE FOR WOMEN IN AGRICULTURE, BHUBANESWAR"
-        android:textSize="15sp"
+        android:text="@string/ICAR"
+        android:textSize="18sp"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         android:textAlignment="center"
