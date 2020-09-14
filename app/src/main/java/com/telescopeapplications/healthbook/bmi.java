@@ -6,6 +6,8 @@ import androidx.appcompat.widget.Toolbar;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -19,6 +21,7 @@ public class bmi extends AppCompatActivity {
     EditText height, weight;
     Button next,calc;
     TextView result;
+
     private Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +32,40 @@ public class bmi extends AppCompatActivity {
         height= findViewById(R.id.height);
         weight= findViewById(R.id.weight);
 
+
+        height.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s)
+            {
+                showCalculate();
+            }
+        });
+        weight.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                showCalculate();
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
         next= findViewById(R.id.next);
         calc= findViewById(R.id.calc);
         result= findViewById(R.id.result);
@@ -84,10 +121,15 @@ public class bmi extends AppCompatActivity {
             result.setText(bmiLabel);
 
             hideSoftKeyboard(getWindow().getDecorView().findViewById(android.R.id.content));
-            calc.setVisibility(View.GONE);
+
+            calc.setVisibility(View.INVISIBLE);
             next.setVisibility(View.VISIBLE);
         }
 
+        public void showCalculate(){
+            calc.setVisibility(View.VISIBLE);
+            next.setVisibility(View.INVISIBLE);
+        }
     public void opennext(){
         Intent intent=new Intent(this, VNSelector.class);
         startActivity(intent);
