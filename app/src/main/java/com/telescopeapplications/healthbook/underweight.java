@@ -21,7 +21,7 @@ public class underweight extends AppCompatActivity {
   toolbar = findViewById(R.id.toolbar12);
         setSupportActionBar(toolbar);
          pdfView = findViewById(R.id.under_pdf_view);
-        pdfView.fromAsset("under.pdf").show();
+        pdfView.fromAsset("under.pdf").scale(100).show();
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

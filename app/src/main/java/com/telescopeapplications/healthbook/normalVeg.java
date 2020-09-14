@@ -21,7 +21,7 @@ public class normalVeg extends AppCompatActivity {
   toolbar = findViewById(R.id.toolbar15);
         setSupportActionBar(toolbar);
          pdfView = findViewById(R.id.normalVeg_pdf_view);
-         pdfView.fromAsset("normalVeg.pdf").show();
+         pdfView.fromAsset("normalVeg.pdf").scale(100).show();
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

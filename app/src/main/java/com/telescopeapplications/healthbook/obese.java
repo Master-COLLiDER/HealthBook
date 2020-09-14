@@ -23,7 +23,7 @@ public class obese extends AppCompatActivity {
         toolbar = findViewById(R.id.toolbar10);
         setSupportActionBar(toolbar);
         pdfView = findViewById(R.id.obese_pdf_view);
-        pdfView.fromAsset("obese.pdf").show();
+        pdfView.fromAsset("obese.pdf").scale(100).show();
     }
 
     @Override

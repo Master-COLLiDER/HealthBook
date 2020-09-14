@@ -22,7 +22,7 @@ public class obeseVeg extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
          pdfView = findViewById(R.id.obeseVeg_pdf_view);
-        pdfView.fromAsset("obeseVeg.pdf").show();
+        pdfView.fromAsset("obeseVeg.pdf").scale(100).show();
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
