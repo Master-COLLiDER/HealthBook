@@ -24,8 +24,8 @@ public class NUOselector extends AppCompatActivity {
         T = getIntent().getStringExtra("type");
 
 
-        underWeightBtn = findViewById(R.id.underWeightBtn);
-        normalBtn = findViewById(R.id.normalBtn);
+        underWeightBtn = findViewById(R.id.normaltBtn);
+        normalBtn = findViewById(R.id.overweightBtn);
         obeseBtn = findViewById(R.id.obeseBtn);
 
         underWeightBtn.setOnClickListener(new View.OnClickListener() {

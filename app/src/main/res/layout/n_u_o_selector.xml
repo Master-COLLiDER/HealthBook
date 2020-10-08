@@ -15,27 +15,25 @@
         android:layout_centerHorizontal="true"/>
 
     <Button
-        android:id="@+id/underWeightBtn"
+        android:id="@+id/normaltBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="200dp"
         android:background="@drawable/button"
-        android:text="UnderWeight"
-        android:textColor="#43454A"
-        />
+        android:text="Normal"
+        android:textColor="#43454A" />
 
 
     <Button
-        android:id="@+id/normalBtn"
+        android:id="@+id/overweightBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="350dp"
         android:background="@drawable/button"
-        android:text="Normal"
-        android:textColor="#43454A"
-        />
+        android:text="Overweight"
+        android:textColor="#43454A" />
 
     <Button
         android:id="@+id/obeseBtn"

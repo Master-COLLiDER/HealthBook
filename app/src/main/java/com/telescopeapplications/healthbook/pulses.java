@@ -1,8 +1,5 @@
 package com.telescopeapplications.healthbook;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,21 +7,25 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
-public class SlideActivity2 extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
+public class pulses extends AppCompatActivity {
+
     private Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_slide2);
+        setContentView(R.layout.pulses);
 
-        toolbar = findViewById(R.id.toolbar6);
+        toolbar = findViewById(R.id.toolbarPulses);
         setSupportActionBar(toolbar);
 
-        getWindow().getDecorView().findViewById(R.id.toolbar7).setOnClickListener(new View.OnClickListener() {
+
+        findViewById(R.id.pulsesNextBtn).setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), cereal.class);
-                startActivity(intent);
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),fruits.class));
             }
         });
     }
@@ -48,8 +49,10 @@ public class SlideActivity2 extends AppCompatActivity {
             case R.id.action_aboutd:
                 startActivity(new Intent(getApplicationContext(), Copyright.class));
                 break;
+
         }
 
         return super.onOptionsItemSelected(item);
     }
+
 }
