@@ -50,9 +50,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/sbs1" >
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:src="@drawable/button"
-            />
+
     </TextView>
 
     <TextView
