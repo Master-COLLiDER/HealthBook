@@ -8,11 +8,12 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarPulses"
         app:srcCompat="@drawable/background2" />
 
     <androidx.appcompat.widget.Toolbar
@@ -40,6 +41,7 @@
 
     <View
 
+        android:id="@+id/view9"
         android:layout_width="match_parent"
         android:layout_height="3dp"
         android:background="@drawable/toolbardropshadow"
@@ -99,6 +101,7 @@
         android:id="@+id/cerialTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:background="@color/colorPrimary"
         android:padding="8dp"
         android:paddingLeft="16dp"
@@ -109,7 +112,7 @@
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="95dp" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbarPulses" />
 
     <CheckBox
         android:id="@+id/sbs1"
