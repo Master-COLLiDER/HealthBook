@@ -94,7 +94,7 @@
             android:layout_marginStart="16dp"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:src="@drawable/aau" />
+            android:src="@drawable/icarlogo_400x400" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
