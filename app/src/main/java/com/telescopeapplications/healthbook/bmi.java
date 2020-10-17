@@ -104,7 +104,7 @@ public class bmi extends AppCompatActivity {
             if (bmi >= 18.5f && bmi <= 24.9f ){
                 bmiLabel = "Normal";
             }else if (bmi >= 25.0f && bmi <= 29.9f){
-                bmiLabel = "UnderWeight";
+                bmiLabel = "OverWeight";
             }else if (bmi >= 30.0f){
                 bmiLabel = "Obese";
             }
