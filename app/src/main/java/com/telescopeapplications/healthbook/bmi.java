@@ -89,7 +89,7 @@ public class bmi extends AppCompatActivity {
         String heightStr = height.getText().toString();
         String weightStr = weight.getText().toString();
 
-        if (heightStr != null && !"".equals(heightStr) && weightStr != null && !"".equals(weightStr)) {
+        if (!"".equals(heightStr) && !"".equals(weightStr)) {
             float heightValue = Float.parseFloat(heightStr) / 100;
             float weightValue = Float.parseFloat(weightStr);
 
@@ -99,21 +99,13 @@ public class bmi extends AppCompatActivity {
         }
     }
         private void displayBMI(float bmi) {
-            String bmiLabel = "";
+            String bmiLabel = "Undefined";
 
-            if (Float.compare(bmi, 15f) <= 0) {
-                bmiLabel = "Underweight";
-            } else if (Float.compare(bmi, 15f) > 0 && Float.compare(bmi, 16f) <= 0) {
-                bmiLabel = "Underweight";
-            } else if (Float.compare(bmi,16f) > 0 && Float.compare(bmi, 18.5f) <= 0) {
-                bmiLabel = "Underweight";
-            } else if (Float.compare(bmi, 18.5f) > 0 && Float.compare(bmi, 22.9f) <= 0) {
+            if (bmi >= 18.5f && bmi <= 24.9f ){
                 bmiLabel = "Normal";
-            } else if (Float.compare(bmi, 23f) > 0 && Float.compare(bmi, 24.9f) <= 0) {
-                bmiLabel = "Overweight";
-            } else if (Float.compare(bmi, 25f) > 0 && Float.compare(bmi, 50f) <= 0) {
-                bmiLabel = "Obese";
-            } else {
+            }else if (bmi >= 25.0f && bmi <= 29.9f){
+                bmiLabel = "UnderWeight";
+            }else if (bmi >= 30.0f){
                 bmiLabel = "Obese";
             }
 
