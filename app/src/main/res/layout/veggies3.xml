@@ -32,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="BRINJAL"
+        android:text="BITTER GOURD"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/sbs1"
         app:layout_constraintStart_toStartOf="@+id/textView3"
@@ -53,7 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="CABBAGE"
+        android:text="FENUGREEK LEAVES"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/sbs2"
         app:layout_constraintStart_toStartOf="@+id/textView4"
@@ -64,7 +64,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="CUCUMBER"
+        android:text="DRUMSTICK LEAVES"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/sbs3"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
@@ -75,29 +75,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="TOMATO"
+        android:text="MINT LEAVES"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/sbs5"
         app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toTopOf="@+id/sbs5" />
 
     <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="GREEN BANANA"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/sbs10"
-        app:layout_constraintStart_toStartOf="@+id/textView6"
-        app:layout_constraintTop_toTopOf="@+id/sbs10" />
-
-    <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="CARROT"
+        android:text="CURRY LEAVES"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/sbs4"
         app:layout_constraintStart_toStartOf="@+id/textView4"
@@ -125,8 +114,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="48dp"
-        app:layout_constraintStart_toEndOf="@+id/textView12"
+        android:layout_marginTop="64dp"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/cerialTitle" />
 
     <CheckBox
@@ -168,16 +157,6 @@
         app:layout_constraintStart_toStartOf="@+id/sbs4"
         app:layout_constraintTop_toBottomOf="@+id/sbs4" />
 
-    <CheckBox
-        android:id="@+id/sbs10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toEndOf="@+id/sbs4"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/sbs4"
-        app:layout_constraintTop_toBottomOf="@+id/sbs5" />
-
     <Button
         android:id="@+id/veggiesNextBtn"
         android:layout_width="wrap_content"
@@ -195,7 +174,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.61" />
+        app:layout_constraintGuide_percent="0.8" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -205,7 +184,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/textView2"
         app:layout_constraintEnd_toStartOf="@+id/textView2"
         app:layout_constraintTop_toTopOf="@+id/textView2"
-        app:srcCompat="@drawable/brinjal" />
+        app:srcCompat="@drawable/bittergourd" />
 
     <ImageView
         android:id="@+id/imageView13"
@@ -215,7 +194,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/textView3"
         app:layout_constraintEnd_toStartOf="@+id/textView3"
         app:layout_constraintTop_toTopOf="@+id/textView3"
-        app:srcCompat="@drawable/cabbage" />
+        app:srcCompat="@drawable/fenugreekleaves" />
 
     <ImageView
         android:id="@+id/imageView14"
@@ -225,7 +204,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/textView4"
         app:layout_constraintEnd_toStartOf="@+id/textView4"
         app:layout_constraintTop_toTopOf="@+id/textView4"
-        app:srcCompat="@drawable/cucumber" />
+        app:srcCompat="@drawable/drumstickleaves" />
 
     <ImageView
         android:id="@+id/imageView15"
@@ -235,7 +214,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/textView6"
         app:layout_constraintEnd_toStartOf="@+id/textView6"
         app:layout_constraintTop_toTopOf="@+id/textView6"
-        app:srcCompat="@drawable/carrot" />
+        app:srcCompat="@drawable/curryleaves" />
 
     <ImageView
         android:id="@+id/imageView16"
@@ -245,16 +224,6 @@
         app:layout_constraintBottom_toBottomOf="@+id/textView5"
         app:layout_constraintEnd_toStartOf="@+id/textView5"
         app:layout_constraintTop_toTopOf="@+id/textView5"
-        app:srcCompat="@drawable/tomato" />
-
-    <ImageView
-        android:id="@+id/imageView32"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView12"
-        app:layout_constraintEnd_toStartOf="@+id/textView5"
-        app:layout_constraintTop_toTopOf="@+id/textView12"
-        app:srcCompat="@drawable/greenbanana" />
+        app:srcCompat="@drawable/mintleaves" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
