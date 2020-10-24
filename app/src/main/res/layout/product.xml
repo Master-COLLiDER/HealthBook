@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".veggies">
+    tools:context=".product">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -17,7 +17,7 @@
         app:srcCompat="@drawable/background2" />
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarVeggies"
+        android:id="@+id/toolbarProduct"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
@@ -46,7 +46,7 @@
         android:background="@drawable/toolbardropshadow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarVeggies" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbarProduct" />
 
     <TextView
         android:id="@+id/textView3"
@@ -86,11 +86,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="PEANUT NUTTER"
+        android:text="NUTS"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/sbs10"
         app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toTopOf="@+id/sbs10" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="CURD"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/sbs11"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/sbs11" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="PEANUT BUTTER"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/sbs12"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/sbs12" />
 
     <TextView
         android:id="@+id/textView6"
@@ -114,26 +136,26 @@
         android:paddingTop="8dp"
         android:paddingRight="16dp"
         android:paddingBottom="8dp"
-        android:text="SELECT YOUR LOW GI VEGGIES "
+        android:text="SELECT YOUR FOOD PRODUCTS"
         android:textSize="22sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarVeggies" />
+        app:layout_constraintEnd_toEndOf="@+id/sbs1"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarProduct" />
 
     <CheckBox
         android:id="@+id/sbs1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="48dp"
-        app:layout_constraintStart_toEndOf="@+id/textView12"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/cerialTitle" />
 
     <CheckBox
         android:id="@+id/sbs2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="@+id/sbs1"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="@+id/sbs1"
@@ -143,7 +165,7 @@
         android:id="@+id/sbs3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="@+id/sbs2"
         app:layout_constraintStart_toStartOf="@+id/sbs2"
         app:layout_constraintTop_toBottomOf="@+id/sbs2" />
@@ -152,7 +174,7 @@
         android:id="@+id/sbs4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="@+id/sbs3"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="@+id/sbs3"
@@ -162,7 +184,7 @@
         android:id="@+id/sbs5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="@+id/sbs4"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="@+id/sbs4"
@@ -172,14 +194,34 @@
         android:id="@+id/sbs10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="@+id/sbs4"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="@+id/sbs4"
         app:layout_constraintTop_toBottomOf="@+id/sbs5" />
 
+    <CheckBox
+        android:id="@+id/sbs11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/sbs4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/sbs4"
+        app:layout_constraintTop_toBottomOf="@+id/sbs10" />
+
+    <CheckBox
+        android:id="@+id/sbs12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/sbs4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/sbs4"
+        app:layout_constraintTop_toBottomOf="@+id/sbs11" />
+
     <Button
-        android:id="@+id/veggiesNextBtn"
+        android:id="@+id/productNextBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
@@ -255,6 +297,26 @@
         app:layout_constraintBottom_toBottomOf="@+id/textView12"
         app:layout_constraintEnd_toStartOf="@+id/textView5"
         app:layout_constraintTop_toTopOf="@+id/textView12"
+        app:srcCompat="@drawable/nuts" />
+
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView13"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/textView13"
+        app:srcCompat="@drawable/curd" />
+
+    <ImageView
+        android:id="@+id/imageView34"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView16"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/textView16"
         app:srcCompat="@drawable/peanutbutter" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

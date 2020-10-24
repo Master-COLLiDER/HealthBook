@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".veggies">
+    tools:context=".veggies2">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -17,7 +17,7 @@
         app:srcCompat="@drawable/background2" />
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarVeggies"
+        android:id="@+id/toolbarVeggies2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
@@ -46,7 +46,7 @@
         android:background="@drawable/toolbardropshadow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarVeggies" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbarVeggies2" />
 
     <TextView
         android:id="@+id/textView3"
@@ -118,7 +118,7 @@
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarVeggies" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbarVeggies2" />
 
     <CheckBox
         android:id="@+id/sbs1"
@@ -179,7 +179,7 @@
         app:layout_constraintTop_toBottomOf="@+id/sbs5" />
 
     <Button
-        android:id="@+id/veggiesNextBtn"
+        android:id="@+id/veggies2NextBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"

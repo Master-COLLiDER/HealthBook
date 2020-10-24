@@ -10,23 +10,23 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-public class veggies extends AppCompatActivity {
+public class product extends AppCompatActivity {
 
     private Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.veggies);
+        setContentView(R.layout.product);
 
 
-        toolbar = findViewById(R.id.toolbarVeggies);
+        toolbar = findViewById(R.id.toolbarProduct);
         setSupportActionBar(toolbar);
 
 
-        findViewById(R.id.veggiesNextBtn).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.productNextBtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),veggies2.class));
+                startActivity(new Intent(getApplicationContext(),bmi.class));
             }
         });
     }

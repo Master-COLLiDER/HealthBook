@@ -21,6 +21,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".cereal"/>
+        <activity android:name=".product"/>
+        <activity android:name=".veggies2"/>
+        <activity android:name=".veggies3"/>
         <activity android:name=".fruits" />
         <activity android:name=".pulses"/>
         <activity android:name=".veggies"/>
