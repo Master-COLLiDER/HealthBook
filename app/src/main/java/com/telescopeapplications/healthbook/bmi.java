@@ -123,7 +123,7 @@ public class bmi extends AppCompatActivity {
             next.setVisibility(View.INVISIBLE);
         }
     public void opennext(){
-        Intent intent=new Intent(this, VNSelector.class);
+        Intent intent=new Intent(this, cereal.class);
         startActivity(intent);
     }
 

@@ -26,7 +26,7 @@ public class product extends AppCompatActivity {
         findViewById(R.id.productNextBtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),bmi.class));
+                startActivity(new Intent(getApplicationContext(),VNSelector.class));
             }
         });
     }
