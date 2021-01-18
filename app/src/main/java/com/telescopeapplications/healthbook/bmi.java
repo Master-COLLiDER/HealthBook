@@ -99,7 +99,7 @@ public class bmi extends AppCompatActivity {
         }
     }
         private void displayBMI(float bmi) {
-            String bmiLabel = "Undefined";
+            String bmiLabel = "UnderWeight";
 
             if (bmi >= 18.5f && bmi <= 24.9f ){
                 bmiLabel = "Normal";
