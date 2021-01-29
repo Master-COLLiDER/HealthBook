@@ -138,6 +138,7 @@
         android:paddingBottom="8dp"
         android:text="SELECT YOUR FOOD PRODUCTS"
         android:textSize="22sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/sbs1"
         app:layout_constraintStart_toStartOf="@+id/imageView7"
         app:layout_constraintTop_toBottomOf="@+id/toolbarProduct" />
