@@ -7,6 +7,12 @@
     tools:context=".Copyright">
 
 
+    <ImageView
+        android:id="@+id/imageView39"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/background2" />
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar1"
         android:layout_width="match_parent"

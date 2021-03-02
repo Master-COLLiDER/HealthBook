@@ -7,6 +7,12 @@
     android:background="@color/cardview_light_background"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView38"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/background2" />
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar9"
         android:layout_width="match_parent"
