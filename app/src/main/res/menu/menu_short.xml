@@ -9,7 +9,7 @@
     </item>
     <item
         android:id="@+id/actionshort_aboutd"
-        android:title="About Developer"
+        android:title="Research Team"
         app:showAsAction="never"
         >
     </item>
