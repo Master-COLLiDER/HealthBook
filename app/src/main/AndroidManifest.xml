@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
-    package="com.telescopeapplications.healthbook">
+    package="com.diabfix.healthbook">
 
     <dist:module dist:instant="true" />
 
@@ -20,29 +20,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".cereal"/>
-        <activity android:name=".product"/>
-        <activity android:name=".veggies2"/>
-        <activity android:name=".veggies3"/>
-        <activity android:name=".fruits" />
-        <activity android:name=".pulses"/>
-        <activity android:name=".veggies"/>
-        <activity android:name=".Copyright" />
-        <activity android:name=".AboutActivity" />
-        <activity android:name=".SlideActivity2" />
-        <activity android:name=".SlideActivity" />
-        <activity android:name=".obeseVeg" />
-        <activity android:name=".normalVeg" />
-        <activity android:name=".underweightVeg" />
-        <activity android:name=".VNSelector" />
-        <activity android:name=".NUOselector" />
-        <activity android:name=".obese" />
-        <activity android:name=".normal" />
-        <activity android:name=".underweight" />
-        <activity android:name=".bmi" />
-        <activity android:name=".MainActivity" />
+        <activity android:name="com.diabfix.healthbook.cereal"/>
+        <activity android:name="com.diabfix.healthbook.product"/>
+        <activity android:name="com.diabfix.healthbook.veggies2"/>
+        <activity android:name="com.diabfix.healthbook.veggies3"/>
+        <activity android:name="com.diabfix.healthbook.fruits" />
+        <activity android:name="com.diabfix.healthbook.pulses"/>
+        <activity android:name="com.diabfix.healthbook.veggies"/>
+        <activity android:name="com.diabfix.healthbook.Copyright" />
+        <activity android:name="com.diabfix.healthbook.AboutActivity" />
+        <activity android:name="com.diabfix.healthbook.SlideActivity2" />
+        <activity android:name="com.diabfix.healthbook.SlideActivity" />
+        <activity android:name="com.diabfix.healthbook.obeseVeg" />
+        <activity android:name="com.diabfix.healthbook.normalVeg" />
+        <activity android:name="com.diabfix.healthbook.underweightVeg" />
+        <activity android:name="com.diabfix.healthbook.VNSelector" />
+        <activity android:name="com.diabfix.healthbook.NUOselector" />
+        <activity android:name="com.diabfix.healthbook.obese" />
+        <activity android:name="com.diabfix.healthbook.normal" />
+        <activity android:name="com.diabfix.healthbook.underweight" />
+        <activity android:name="com.diabfix.healthbook.bmi" />
+        <activity android:name="com.diabfix.healthbook.MainActivity" />
         <activity
-            android:name=".SplashActivity"
+            android:name="com.diabfix.healthbook.SplashActivity"
             android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

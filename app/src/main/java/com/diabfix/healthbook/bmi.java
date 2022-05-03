@@ -1,4 +1,4 @@
-package com.telescopeapplications.healthbook;
+package com.diabfix.healthbook;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;

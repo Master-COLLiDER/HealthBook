@@ -1,14 +1,14 @@
-package com.telescopeapplications.healthbook;
+package com.diabfix.healthbook;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Copyright extends AppCompatActivity {
+public class AboutActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_copiright);
+        setContentView(R.layout.activity_about);
     }
 }

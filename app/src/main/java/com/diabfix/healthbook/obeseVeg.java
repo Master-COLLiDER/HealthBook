@@ -1,4 +1,4 @@
-package com.telescopeapplications.healthbook;
+package com.diabfix.healthbook;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -11,18 +11,18 @@ import android.view.MenuItem;
 
 import com.pdfview.PDFView;
 
-public class normal extends AppCompatActivity {
-     private Toolbar toolbar;
+public class obeseVeg extends AppCompatActivity {
+      private Toolbar toolbar;
      PDFView pdfView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.normal);
-        toolbar = findViewById(R.id.toolbar14);
+        setContentView(R.layout.obese_veg);
+  toolbar = findViewById(R.id.toolbar11);
         setSupportActionBar(toolbar);
 
-        pdfView = findViewById(R.id.normal_pdf_view);
-        pdfView.fromAsset("normal.pdf").scale(100).show();
+         pdfView = findViewById(R.id.obeseVeg_pdf_view);
+        pdfView.fromAsset("obeseVeg.pdf").scale(100).show();
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

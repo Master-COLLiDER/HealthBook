@@ -1,4 +1,7 @@
-package com.telescopeapplications.healthbook;
+package com.diabfix.healthbook;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,28 +9,40 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.ImageButton;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
-public class pulses extends AppCompatActivity {
-
+public class MainActivity extends AppCompatActivity {
+    private ImageButton BtnMove;
+    private ImageButton BtnMove2;
     private Toolbar toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.pulses);
-
-        toolbar = findViewById(R.id.toolbarPulses);
+        setContentView(R.layout.activity_main);
+        toolbar = findViewById(R.id.toolbar9);
         setSupportActionBar(toolbar);
-
-
-        findViewById(R.id.pulsesNextBtn).setOnClickListener(new View.OnClickListener() {
+        BtnMove = findViewById(R.id.imageButton1);
+        BtnMove.setOnClickListener(new OnClickListener() {
             @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),fruits.class));
+            public void onClick(View v) {
+                movetosecond();
             }
         });
+
+        BtnMove2 = findViewById(R.id.imageButton2);
+        BtnMove2.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                movetosecond();
+            }
+        });
+    }
+
+    private void movetosecond() {
+        Intent intent = new Intent(MainActivity.this, bmi.class);
+        startActivity(intent);
     }
 
     @Override
@@ -49,7 +64,6 @@ public class pulses extends AppCompatActivity {
             case R.id.action_aboutd:
                 startActivity(new Intent(getApplicationContext(), Copyright.class));
                 break;
-
         }
 
         return super.onOptionsItemSelected(item);

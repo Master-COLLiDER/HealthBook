@@ -1,7 +1,4 @@
-package com.telescopeapplications.healthbook;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
+package com.diabfix.healthbook;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,46 +6,31 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageButton;
 
-public class VNSelector extends AppCompatActivity {
-    private ImageButton BnVeg;
-    private ImageButton BnNonVeg;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
+public class veggies2 extends AppCompatActivity {
+
     private Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.v_n_selector);
+        setContentView(R.layout.veggies2);
 
-         toolbar = findViewById(R.id.toolbar2);
+
+        toolbar = findViewById(R.id.toolbarVeggies2);
         setSupportActionBar(toolbar);
-        BnVeg =findViewById(R.id.bnvnselectorveg);
-        BnNonVeg =findViewById(R.id.bnvnselectornonveg);
-        BnVeg.setOnClickListener(new View.OnClickListener() {
+
+
+        findViewById(R.id.veggies2NextBtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openvalue();
-            }
-        });
-        BnNonVeg.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openvalue2();
+                startActivity(new Intent(getApplicationContext(),veggies3.class));
             }
         });
     }
 
-    public void openvalue(){
-        Intent intent=new Intent(this, NUOselector.class);
-        intent.putExtra("type","Veg");
-        startActivity(intent);
-    }
-
-    public void openvalue2(){
-        Intent intent=new Intent(this, NUOselector.class);
-        intent.putExtra("type","NonVeg");
-        startActivity(intent);
-    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -68,6 +50,7 @@ public class VNSelector extends AppCompatActivity {
             case R.id.action_aboutd:
                 startActivity(new Intent(getApplicationContext(), Copyright.class));
                 break;
+
         }
 
         return super.onOptionsItemSelected(item);

@@ -1,4 +1,7 @@
-package com.telescopeapplications.healthbook;
+package com.diabfix.healthbook;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,26 +10,21 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
-public class veggies3 extends AppCompatActivity {
-
+public class SlideActivity2 extends AppCompatActivity {
     private Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.veggies3);
+        setContentView(R.layout.activity_slide2);
 
-
-        toolbar = findViewById(R.id.toolbarVeggies3);
+        toolbar = findViewById(R.id.toolbar6);
         setSupportActionBar(toolbar);
 
-
-        findViewById(R.id.veggies3NextBtn).setOnClickListener(new View.OnClickListener() {
+        getWindow().getDecorView().findViewById(R.id.toolbar7).setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),product.class));
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
             }
         });
     }
@@ -50,7 +48,6 @@ public class veggies3 extends AppCompatActivity {
             case R.id.action_aboutd:
                 startActivity(new Intent(getApplicationContext(), Copyright.class));
                 break;
-
         }
 
         return super.onOptionsItemSelected(item);

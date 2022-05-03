@@ -1,28 +1,36 @@
-package com.telescopeapplications.healthbook;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
+package com.diabfix.healthbook;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 
-import com.pdfview.PDFView;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
-public class normalVeg extends AppCompatActivity {
-     private Toolbar toolbar;
-    PDFView pdfView;
+public class veggies3 extends AppCompatActivity {
+
+    private Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.normal_veg);
-        toolbar = findViewById(R.id.toolbar15);
+        setContentView(R.layout.veggies3);
+
+
+        toolbar = findViewById(R.id.toolbarVeggies3);
         setSupportActionBar(toolbar);
-        pdfView = findViewById(R.id.normalVeg_pdf_view);
-        pdfView.fromAsset("normalVeg.pdf").scale(100).show();
+
+
+        findViewById(R.id.veggies3NextBtn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),product.class));
+            }
+        });
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();

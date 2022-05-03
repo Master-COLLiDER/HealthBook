@@ -1,7 +1,4 @@
-package com.telescopeapplications.healthbook;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
+package com.diabfix.healthbook;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,21 +7,26 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
-public class fruits extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
+public class product extends AppCompatActivity {
 
     private Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fruits);
+        setContentView(R.layout.product);
 
-        toolbar = findViewById(R.id.toolbarFruits);
+
+        toolbar = findViewById(R.id.toolbarProduct);
         setSupportActionBar(toolbar);
 
-        findViewById(R.id.fruitsNextBtn).setOnClickListener(new View.OnClickListener() {
+
+        findViewById(R.id.productNextBtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),veggies.class));
+                startActivity(new Intent(getApplicationContext(),VNSelector.class));
             }
         });
     }

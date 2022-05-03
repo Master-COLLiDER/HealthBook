@@ -1,4 +1,4 @@
-package com.telescopeapplications.healthbook;
+package com.diabfix.healthbook;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -88,7 +88,7 @@ public class NUOselector extends AppCompatActivity {
     }
 
     public void openObese(){
-        Intent intent=new Intent(this, com.telescopeapplications.healthbook.obese.class);
+        Intent intent=new Intent(this, com.diabfix.healthbook.obese.class);
         startActivity(intent);
     }
 

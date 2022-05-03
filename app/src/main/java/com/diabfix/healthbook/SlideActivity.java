@@ -1,32 +1,56 @@
-package com.telescopeapplications.healthbook;
+package com.diabfix.healthbook;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
-public class cereal extends AppCompatActivity {
-
+public class SlideActivity extends AppCompatActivity {
+    boolean doubleBackToExitPressedOnce = false;
     private Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cereal);
+        setContentView(R.layout.activity_slide);
 
-        toolbar = findViewById(R.id.cerealToolbar);
+        toolbar = findViewById(R.id.toolbar4);
         setSupportActionBar(toolbar);
 
-        findViewById(R.id.cerealNextBtn).setOnClickListener(new View.OnClickListener() {
+        getWindow().getDecorView().findViewById(R.id.toolbar5).setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),pulses.class));
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getApplicationContext(), SlideActivity2.class);
+                startActivity(intent);
             }
         });
+    }
+
+
+    @Override
+    public void onBackPressed() {
+        if (doubleBackToExitPressedOnce) {
+            super.onBackPressed();
+            return;
+        }
+
+        this.doubleBackToExitPressedOnce = true;
+        Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show();
+
+        new Handler().postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                doubleBackToExitPressedOnce=false;
+            }
+        }, 2000);
     }
 
     @Override

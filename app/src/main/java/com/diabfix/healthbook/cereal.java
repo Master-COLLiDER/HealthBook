@@ -1,4 +1,4 @@
-package com.telescopeapplications.healthbook;
+package com.diabfix.healthbook;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -10,20 +10,23 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.pdfview.PDFView;
+public class cereal extends AppCompatActivity {
 
-public class obese extends AppCompatActivity {
     private Toolbar toolbar;
-     PDFView pdfView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.obese);
+        setContentView(R.layout.activity_cereal);
 
-        toolbar = findViewById(R.id.toolbar10);
+        toolbar = findViewById(R.id.cerealToolbar);
         setSupportActionBar(toolbar);
-        pdfView = findViewById(R.id.obese_pdf_view);
-        pdfView.fromAsset("obese.pdf").scale(100).show();
+
+        findViewById(R.id.cerealNextBtn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),pulses.class));
+            }
+        });
     }
 
     @Override
@@ -50,5 +53,4 @@ public class obese extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
 }

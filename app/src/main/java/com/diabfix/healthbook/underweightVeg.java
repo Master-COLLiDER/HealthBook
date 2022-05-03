@@ -1,4 +1,4 @@
-package com.telescopeapplications.healthbook;
+package com.diabfix.healthbook;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -8,27 +8,21 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
 
-public class SlideActivity2 extends AppCompatActivity {
-    private Toolbar toolbar;
+import com.pdfview.PDFView;
+
+public class underweightVeg extends AppCompatActivity {
+      private Toolbar toolbar;
+    PDFView pdfView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_slide2);
-
-        toolbar = findViewById(R.id.toolbar6);
+        setContentView(R.layout.underweight_veg);
+  toolbar = findViewById(R.id.toolbar13);
         setSupportActionBar(toolbar);
-
-        getWindow().getDecorView().findViewById(R.id.toolbar7).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(intent);
-            }
-        });
+       pdfView = findViewById(R.id.underVeg_pdf_view);
+        pdfView.fromAsset("underVeg.pdf").scale(100).show();
     }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -48,6 +42,7 @@ public class SlideActivity2 extends AppCompatActivity {
             case R.id.action_aboutd:
                 startActivity(new Intent(getApplicationContext(), Copyright.class));
                 break;
+
         }
 
         return super.onOptionsItemSelected(item);
