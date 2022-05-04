@@ -52,7 +52,7 @@
         android:textAlignment="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dr. Mamoni Das \nPrincipal Scientist (AICRP-FN Component)"
+        android:text="Dr. Mamoni Das \nPrincipal Scientist \n(AICRP-FN Component)"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="305dp"
         android:textSize="18dp"
@@ -81,7 +81,7 @@
         android:layout_marginTop="440dp"
         android:layout_marginRight="20dp"
         android:autoLink="web"
-        android:text="Ms. Pallavi Talukdar\n JLA AICRP on Home Science AAU, Jorhat-13"
+        android:text="Ms. Pallavi Talukdar\n Junior Lab Assistant \n AICRP on Home Science AAU \n Jorhat-13"
         android:textAlignment="center"
         android:textSize="18dp" />
 
